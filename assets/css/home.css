@@ -1,0 +1,194 @@
+/* ----------------------------------------------------------- Slider ----------------------------------------------------------- */
+#slider{
+    padding: 70px 0px;
+}
+
+.contenedor_slider{
+    width: 400%;
+    height: 700px;
+
+    transition: margin 3s;
+}
+
+.contenedor_slider .wrap{
+    display: flex;
+}
+
+.contenedor_slider ul{
+    display: flex;
+    list-style: none;
+}
+
+.contenedor_slider ul li{
+    display: flex;
+    position: relative;
+}
+
+.contenedor_slider ul li img{
+    width: 100%;
+}
+
+.contenedor_slider ul .diapositiva .sombra{
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+
+    z-index: 200;
+
+    background: linear-gradient(to right, #000 -50%, transparent 120%);
+}
+
+.contenedor_slider ul .diapositiva .contenedor_texto_diapositiva{
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 700px;
+
+    z-index: 300;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contenedor_slider ul .diapositiva .contenedor_texto_diapositiva .informacion_diapositiva{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor_slider ul .diapositiva .contenedor_texto_diapositiva .informacion_diapositiva h4{
+    background-color: #28D501;
+    padding: 10px 40px;
+    color: white;
+    font-size: 28px;
+}
+
+.contenedor_slider ul .diapositiva .contenedor_texto_diapositiva .informacion_diapositiva h2{
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 40px 0px;
+}
+
+.contenedor_slider ul .diapositiva .contenedor_texto_diapositiva .informacion_diapositiva a{
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    padding: 15px 20px;
+}
+
+.contenedor_slider ul .diapositiva .contenedor_texto_diapositiva .informacion_diapositiva a:hover{
+    background: linear-gradient(to right, #DCF100, #28D501);
+    color: white;
+}
+
+.contenedor_slider ul .diapositiva .contenedor_texto_diapositiva .informacion_diapositiva .contenedor_texto{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+
+/* --------------------------------------------------------- Productos --------------------------------------------------------- */
+.productos .wrap{
+    margin-top: 70px;
+}
+
+.productos .wrap .linea{
+    width: 120px;
+    border: 1px solid #E6F300;
+    margin: 20px auto 40px auto;
+}
+
+.productos .wrap h2{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.contenedor_productos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    margin: 70px 0px;
+}
+
+.tarjeta_producto{
+    background: #0D0D0D;
+
+    display: grid;
+    grid-template-rows: 325px 1fr;
+}
+
+.tarjeta_producto .contenedor_imagen_producto{
+    background-color: #121212;
+}
+
+.tarjeta_producto .contenedro_informacion_producto{
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+.texto_producto{
+    padding: 20px;
+}
+
+.tarjeta_producto .contenedro_informacion_producto .titulo_producto{
+    color: white;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.tarjeta_producto .contenedro_informacion_producto .precio_producto{
+    color: #E6F300;
+}
+
+.tarjeta_producto .contenedro_informacion_producto .precio_producto .promocion{
+    color: #d9d9d9;
+    text-decoration: line-through;
+    margin-right: 5px;
+}
+
+.contenedor_botones_producto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contenedor_botones_producto .boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0px;
+    cursor: pointer;
+}
+
+.contenedor_botones_producto .boton .ojo:hover,
+.contenedor_botones_producto .boton .bolsa:hover{
+    fill: #E6F300;
+}
+
+.contenedor_botones_producto .boton .ojo{
+    width: 20px;
+    height: 20px;
+    fill: white;
+}
+
+.contenedor_botones_producto .boton .bolsa{
+    width: 20px;
+    height: 20px;
+    fill: white;
+}
+/* ----------------------------------------------------------------------------------------------------------------------------- */
