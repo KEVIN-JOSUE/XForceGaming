@@ -40,4 +40,4 @@ const automatico = () => {
 };
 
 
-setInterval(automatico, 10000);
+setInterval(automatico, 5000);
