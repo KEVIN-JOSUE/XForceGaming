@@ -1,121 +1,191 @@
-*{
-    padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+
+* {
     margin: 0;
-    box-sizing: border-box;
-    overflow: auto;
-    overflow-x: hidden;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
 }
 
-/*body {
+*:focus {
+    outline: none;
+}
 
+body {
+    position: relative;
+}
+
+.wrap {
+    width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+
+    overflow: hidden;
+}
+
+.imagen_fondo {
+    display: block;
+    background-image: url(../img/body-bg.jpg);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    width: 100%;
+    height: 200%;
+    filter: grayscale(100%);
+}
+
+.container {
+    position: relative;
+    z-index: 200;
+}
+
+#navbar {
+    background: #171717;
+    box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.07);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#navbar .wrap {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    column-gap: 50px;
+    padding: 35px 0px 25px 0px;
+}
+
+#navbar .wrap .contenedor_logo a {
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
-    font-family: Arial, Arial, Helvetica, sans-serif;
-    background: linear-gradient(27deg, black 50% , green 50%);
-}*/ 
-
-.form-body{
-       
-
-    overflow: auto;
-       padding: 68px;
-       width: 400px;
-       min-width: 300px;
-       border-radius: 100px;
-       border-top-left-radius: 50px;
-       border-bottom-right-radius: 50px;
-       border: solid 1px #00FF19;
-       margin: 400px;
-       justify-content: center;
-       align-items:  flex-start;
+    text-decoration: none;
 }
 
-.form-body img{
-   
-    width: 65px;
-    display: block;
-    margin: 20px auto;
+#navbar .wrap .contenedor_logo a img {
+    width: 60px;
 
+    position: relative;
+    top: -10px;
 }
 
-
-
-
-
-.text {
-     
-    text-align: center;
-    font-size: 1.5rem;
+#navbar .wrap .contenedor_logo a p {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: white;
     font-weight: 600;
-    color: white;
-    margin-bottom: 25px;
-
+    margin-left: 10px;
 }
 
-.form-body input {
+#navbar .wrap .contenedor_logo a p span {
+    color: #28D501;
+}
 
+.menu{
+    margin: 0 95%;
+    padding: 0;
+    height: 50px;
+    width: 80px;
     display: block;
-    margin: auto;
-    height: 48px;
-    width: 275px;
-    padding-left: 10px;
-    color: white;
-    border: 1px solid;
-    border-radius: 2px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: transparent;
-    border-top-left-radius: 10px;
-    border-bottom-right-radius:  10px; ;
-    font-size: 1rem;
-    outline: none;
-
+    text-align: center;
+    font-size: 40px;  
 }
-
-.form-body input[type="password"] {
-
- margin-top: 20px;
-
-}
-
-::placeholder {
-
-    font-size: 1rem;
-    color: rgba(255, 255 , 255, 596);
-}
-
-.form-body input:hover{
-
-     transition: .5s;
-     border: 1px solid #00FF19;
-     color: #00FF19;
-}
-
-
-.form-body button {
-
-    display: block;
-    margin: auto;
-    margin-top: 25px;
-    margin-bottom: 30px;
-    height: 40px;
-    width: 78px;
-    background: transparent;
-    color: aliceblue;
-    border-radius: 2px;
+.menu .bi{
     cursor: pointer;
-    outline: none;
-    border: 2px solid #00FF19;
-    transition: all .5s ease;
+   
+}
+.menu .bi:hover{
+    color: #28D501;
+}
+
+.body_login{
+
+ background-color: #2b2a2a;
+   width: 100%;
+   height: 653px;
+
+}
+.head_login{
+  
+    width:400px;
+    height: 200px;
+    margin: 0 550px;
+}
+.head_login img{
+    margin-left: 140px;
+}
+.head_login h1{
+   
+    margin-left: 95px;
+    margin-top: 15px;
+}
+
+.formulario_login{
+    
+    width:600px;
+    height: 350px;
+    margin: 0 450px;
+    background-color: #171717;
+    border: 3px solid #28D501;
+    border-radius: 20px;
+}
+.formulario_login form{
+ 
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+
+.formulario_login form .card{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+
+}
+.formulario_login form .card input{
+    width: 400px;
+    height: 30px;
+    margin-top: 15px;
+    border-radius: 8px;
+    background-color:#e4e3e3;
+    
+}
+.formulario_login form .bi{
+    color: #28D501;
+    position: absolute;
+    left: 61%;
+    margin-top: 40px;
+    
+
 
 }
 
-.form-body button:hover{
-
-    color: aliceblue;
-    border: 2px solid #00FF19;
-    background: linear-gradient(green,green);
+.formulario_login form .submit{
+    background-color: #28D501;
+    width: 150px;
+    height: 35px;
+    border-radius: 8px;
+    margin-top: 50px;
+    margin-left: 150px;
+    cursor: pointer;
+    border-color: #50ff29;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
