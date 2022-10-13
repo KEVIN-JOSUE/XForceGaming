@@ -5,16 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XForceGaming | Login</title>
+    <title>XForceGaming | Registrarse</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/css/registrarse.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="assets/css/login.css">
-    
+
+        <script src="https://kit.fontawesome.com/8aa17c9fcf.js" crossorigin="anonymous"></script>
 </head>
+
 
 <body>
     <nav class="container" id="navbar">
@@ -32,37 +35,39 @@
         </div>
     </nav>
 
+    <form class="container_form">
+        <div class="container">
+            <div class="container-input">
+                <i class="fa-solid fa-user icon"></i>
+                <input type="text" placeholder="Nombres y apellidos" required>
+            </div>
 
-    <div class="body_login">
+            <div class="container-input">
+                <i class="fa-solid fa-envelope icon"></i>
 
-        <div class="head_login">
-            <img src="./assets/img/🦆 icon _people.svg" width="100" alt="Usuario">
-            <h1>INICIAR SESIÒN</h1>
+                <input type="email" placeholder="Correo electronico" required>
+            </div>
+
+            <div class="container-input">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Contraseña" required>
+
+            </div>
+
+            <div class="container-d-e">
+
+                <input class="i-dni" type="text" placeholder="DNI" required>
+
+
+                <input class="" type="text" placeholder="Edad" required>
+            </div>
+            <input class="container-boton" type="submit" value="Registrarse">
         </div>
-        <div class="formulario_login">
-            <form action="#">
-
-                <div class="card">
-                    <label for="name"> Correo electronico</label>
-                    <input type="text" name="user_name">
-                    <i class="bi bi-exclamation-circle"></i>
-                </div>
-                <div class="card">
-                    <label for="password"> Contraseña</label>
-                    <input type="password" name="user_password">
-                    <i class="bi bi-exclamation-circle"></i>
-                </div>
-
-
-                <input type="submit" value="Siguiente" class="submit">
-
-
-            </form>
-
-        </div>
-    </div>
-
+    </form>
     <div class="imagen_fondo"></div>
+
+
+
 
 </body>
 
