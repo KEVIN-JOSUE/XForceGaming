@@ -148,12 +148,14 @@ body {
     margin-top: 15px;
     border-radius: 8px;
     background-color:#e4e3e3;
+    color: #000;
+    padding-left: 10px;
     
 }
 .formulario_login form .bi{
     color: #28D501;
     position: absolute;
-    left: 61%;
+    left: 62%;
     margin-top: 40px;
     
 
@@ -169,6 +171,10 @@ body {
     margin-left: 150px;
     cursor: pointer;
     border-color: #50ff29;
+}
+.formulario_login form .submit:hover{
+ background-color: #70fc50;
+ color: #b1b1b1;
 }
 
 
