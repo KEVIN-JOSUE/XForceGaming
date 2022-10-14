@@ -166,3 +166,108 @@ body{
 .contenedor_menu ul li a .icono_carrito:hover{
     fill: #28D501;
 }
+
+
+/* --------------------------------------------------- Footer --------------------------------------------------- */
+footer{
+    padding: 100px 0px;
+    background: #171717;
+    color: white;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.07);
+    text-align: center;
+}
+
+footer .wrap .container-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer .col .contenedor_logo_footer a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+footer .col .contenedor_logo_footer a p{
+    margin-left: 10px;
+    position: relative;
+    top: 5px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+footer .col .contenedor_logo_footer a p span{
+    color: #28D501;
+}
+
+footer .col .logo_footer{
+    width: 50px;
+}
+
+footer .col{
+    text-align: left;
+}
+
+footer .info_extra{
+    width: 300px;
+    margin-top: 20px;
+}
+
+footer .redes_sociales{
+    margin-top: 20px;
+    display: flex;
+}
+
+footer .redes_sociales i{
+    display: block;
+    margin-right: 20px;
+}
+
+footer .col:first-of-type{
+    margin-bottom: 50px;
+}
+
+footer .container_navegacion ul{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+footer .container_navegacion ul li{
+    margin-bottom: 10px;
+}
+
+footer .container_newsletter  p{
+    margin: 15px 0px;
+}
+
+footer .container_newsletter form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer .container_newsletter form input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #5C5C5C;
+    border: transparent;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5) inset;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+footer .container_newsletter form input::placeholder{
+    color: #fff;
+}
+
+footer .container_newsletter form button{
+    padding: 10px;
+    border-radius: 0;
+    background-color: #28D501;
+    color: white;
+    cursor: pointer;
+}
