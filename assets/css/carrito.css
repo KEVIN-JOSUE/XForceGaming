@@ -159,7 +159,7 @@ body {
     left: 0;
     z-index: -100;
     width: 100%;
-    height: 200%;
+    /* height: 200%; */
     filter: grayscale(100%);
 }
 
@@ -299,21 +299,21 @@ body {
 .productos {
 
     width: 99.8%;
-    height: 620px;
+    /* height: 620px; */
     display: flex;
-
+    padding-bottom: 200px;
 }
 
 .carrito1 {
 
     width: 75%;
-    height: 610px;
+    /* height: 610px; */
 }
 
 .resume {
   
     width: 30%;
-    height: 610px;
+    /* height: 610px; */
     padding-top: 95px;
 }
 .resume p{
